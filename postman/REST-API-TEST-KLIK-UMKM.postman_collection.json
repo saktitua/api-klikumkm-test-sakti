@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "bbef8bbb-e02a-4fb4-a598-20197207b9ae",
+		"name": "REST-API-TEST-KLIK-UMKM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5755387"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "sakti",
+							"type": "text"
+						},
+						{
+							"key": "pass",
+							"value": "sakti123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/rest-api-test-klikumkm/post-data.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest-api-test-klikumkm",
+						"post-data.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "martinalova@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "pass",
+							"value": "martina123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/rest-api-test-klikumkm/login.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest-api-test-klikumkm",
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "f7177163c833dff4b38fc8d2872f1ec6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/rest-api-test-klikumkm/read.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest-api-test-klikumkm",
+						"read.php"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "edit",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/rest-api-test-klikumkm/delete.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"rest-api-test-klikumkm",
+						"delete.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
